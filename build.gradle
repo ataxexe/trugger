@@ -1,9 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'signing'
 
 configurations {
-  project.group = "org.atatec"
-  project.version = "4.3"
+  project.group = "tools.devnull"
+  project.version = "4.4"
 
   project.description = "Trugger is a project that helps you write code that anyone can read."
 
@@ -35,6 +36,7 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 }
 
 artifacts {
+  archives jar
   archives sourcesJar
   archives javadocJar
 }
@@ -42,9 +44,15 @@ artifacts {
 task pom << {
   pom {
     project {
-      groupId 'org.atatec.trugger'
-      artifactId 'trugger'
+      groupId project.group
+      artifactId project.name
       packaging 'jar'
+
+      project.name
+      description project.description
+
+      url 'https://github.com/ataxexe/trugger'
+
       licenses {
         license {
           name 'The Apache Software License, Version 2.0'
@@ -52,8 +60,24 @@ task pom << {
           distribution 'repo'
         }
       }
+
+      developers {
+        developer {
+          id 'ataxexe'
+          name 'Marcelo Guimarães'
+          email 'ataxexe@devnull.tools'
+          organizationUrl 'http://devnull.tools'
+          url 'http://entra.la'
+        }
+      }
+
+      scm {
+        connection 'scm:git:git@github.com:ataxexe/trugger.git'
+        url 'https://github.com/ataxexe/trugger'
+      }
+
     }
-  }.writeTo("$buildDir/pom.xml")
+  }.writeTo("${buildDir}/pom.xml")
 }
 
 task dist(type: Zip, dependsOn: [clean, jar, sourcesJar, javadocJar, test, pom]) {
@@ -62,3 +86,6 @@ task dist(type: Zip, dependsOn: [clean, jar, sourcesJar, javadocJar, test, pom])
   from "changelog.txt"
 }
 
+signing {
+  sign configurations.archives
+}
