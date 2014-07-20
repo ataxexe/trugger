@@ -39,7 +39,7 @@ public final class Iteration {
   /**
    * Copy the collection elements that matches with the given conditions to another
    * collection.
-   * <p/>
+   * <p>
    * A {@link IterationFactory} is used to create the component.
    *
    * @return a component for defining the remaining parameters.
@@ -60,7 +60,7 @@ public final class Iteration {
   /**
    * Move the collection elements that matches with the given conditions to another
    * collection.
-   * <p/>
+   * <p>
    * A {@link IterationFactory} is used to create the component.
    *
    * @return a component for defining the remaining parameters.
@@ -80,7 +80,7 @@ public final class Iteration {
 
   /**
    * Retains the elements that matches with the given conditions.
-   * <p/>
+   * <p>
    * A {@link IterationFactory} is used to create the component.
    *
    * @return a component for defining the remaining parameters.
@@ -91,7 +91,7 @@ public final class Iteration {
 
   /**
    * Removes the elements that matches with the given conditions.
-   * <p/>
+   * <p>
    * A {@link IterationFactory} is used to create the component.
    *
    * @return a component for defining the remaining parameters.

@@ -47,7 +47,7 @@ public class ReflectionPredicates {
   /**
    * A predicate that returns <code>true</code> if the evaluated method is a getter
    * method.
-   * <p/>
+   * <p>
    * The method <strong>may</strong> have a prefix "get" or "is", take no parameter and
    * return an object. If the method has the prefix "is", then it must return a boolean
    * value.
@@ -85,7 +85,7 @@ public class ReflectionPredicates {
   /**
    * A predicate that returns <code>true</code> if the evaluated method is a setter
    * method.
-   * <p/>
+   * <p>
    * The method must have the "set" prefix, take one parameter and return no value (a void
    * method).
    */

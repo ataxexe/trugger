@@ -37,7 +37,7 @@ import java.util.Set;
  * Interface that defines a class that encapsulates the reflection using an automata to
  * create a more readable language. That makes more simple to get fields, methods and
  * constructors from that object.
- * <p/>
+ * <p>
  * There are a set of methods that can find specific reflection objects ( {@link Field
  * fields}, {@link Constructor constructors} or {@link Method methods}). These methods
  * returns components that allows filtering by using common methods and, if no object is
@@ -71,7 +71,7 @@ public interface Reflector {
 
   /**
    * Reflects all fields in a target.
-   * <p/>
+   * <p>
    * Use this method for selecting a set of fields.
    *
    * @return the component used for selection.
@@ -80,7 +80,7 @@ public interface Reflector {
 
   /**
    * Reflects a field with the specified name in a target.
-   * <p/>
+   * <p>
    * Use this method for selecting a single field.
    *
    * @param name the field name.
@@ -91,7 +91,7 @@ public interface Reflector {
 
   /**
    * Reflects a field based on the further selection.
-   * <p/>
+   * <p>
    * This method should be used only if the selection matches a single field.
    *
    * @return the component used for selection.
@@ -102,7 +102,7 @@ public interface Reflector {
 
   /**
    * Reflects all methods in a target.
-   * <p/>
+   * <p>
    * Use this method for selecting a set of methods.
    *
    * @return the component used for selection.
@@ -111,9 +111,9 @@ public interface Reflector {
 
   /**
    * Reflects a method with the specified name and parameters in a target.
-   * <p/>
+   * <p>
    * Use this method for selecting a single method.
-   * <p/>
+   * <p>
    * <i>The method parameters in question must be informed in the returned object.</i>
    *
    * @param name the method name.
@@ -124,7 +124,7 @@ public interface Reflector {
 
   /**
    * Reflects a method based on the further selection.
-   * <p/>
+   * <p>
    * This method should be used only if the selection matches a single method.
    *
    * @return the component used for selection.
@@ -179,9 +179,9 @@ public interface Reflector {
 
   /**
    * Reflects a constructor with the specified parameters in a target.
-   * <p/>
+   * <p>
    * Use this method for selecting a single constructor.
-   * <p/>
+   * <p>
    * <i>The constructor parameters in question must be informed in the returned
    * object.</i>
    *
@@ -191,7 +191,7 @@ public interface Reflector {
 
   /**
    * Reflects all the constructors.
-   * <p/>
+   * <p>
    * Use this method for selecting a set of constructors.
    *
    * @return the component used for selection.
@@ -200,7 +200,7 @@ public interface Reflector {
 
   /**
    * Reflects all interfaces that a target implements.
-   * <p/>
+   * <p>
    * This method returns the interfaces found in every class of the target hierarchy.
    * <i>For a set of the interfaces implemented only by the target in question, use the
    * {@link Class#getInterfaces()} method.</i>
@@ -211,11 +211,11 @@ public interface Reflector {
 
   /**
    * Reflects the generic type parameter declared in a target.
-   * <p/>
+   * <p>
    * Example:
-   * <p/>
+   * <p>
    * Based on the following classes.
-   * <p/>
+   * <p>
    * <pre>
    * public class MyClass&lt;E&gt; {
    *   //... fields and methods
@@ -226,7 +226,7 @@ public interface Reflector {
    * }
    * </pre>
    * The code bellow will print <code>MyType</code>:
-   * <p/>
+   * <p>
    * <pre>
    * Class&lt;?&gt; genericType = {@link Reflection#reflect()}.genericType(&quot;E&quot;).in(MyExtendedClass.class);
    * System.out.print(genericType.getSimpleName());
@@ -240,7 +240,7 @@ public interface Reflector {
 
   /**
    * Reflects the generic type parameter declared in a target.
-   * <p/>
+   * <p>
    * This method should be used only if the target has only one generic parameter.
    *
    * @return the component used for selecting the target.
@@ -251,7 +251,7 @@ public interface Reflector {
 
   /**
    * Reflects the bridged method of a given {@link Method#isBridge() bridge} method.
-   * <p/>
+   * <p>
    * If the given method is not a bridge, then it should be returned.
    *
    * @param bridgeMethod the bridge method.

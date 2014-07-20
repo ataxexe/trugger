@@ -98,7 +98,7 @@ public class Elements {
 
   /**
    * Handles a collection of {@link Element#isSpecific() specific} elements.
-   * <p/>
+   * <p>
    * This ValueHandler can set a common value to all elements and retrieve a Collection of
    * all element values.
    *
@@ -131,7 +131,7 @@ public class Elements {
 
   /**
    * Handles a collection of {@link Element#isSpecific() non specific} elements.
-   * <p/>
+   * <p>
    * This ValueHandler can set a common value to all elements and retrieve a Collection of
    * all element values.
    *

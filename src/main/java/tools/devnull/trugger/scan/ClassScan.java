@@ -51,7 +51,7 @@ public class ClassScan {
 
   /**
    * This method has the same effect as:
-   * <p/>
+   * <p>
    * <pre>
    * newScan().findClasses();
    * </pre>
@@ -62,7 +62,7 @@ public class ClassScan {
 
   /**
    * This method has the same effect as:
-   * <p/>
+   * <p>
    * <pre>
    * newScan().findInterfaces();
    * </pre>
@@ -73,7 +73,7 @@ public class ClassScan {
 
   /**
    * This method has the same effect as:
-   * <p/>
+   * <p>
    * <pre>
    * newScan().findEnums();
    * </pre>
@@ -84,7 +84,7 @@ public class ClassScan {
 
   /**
    * This method has the same effect as:
-   * <p/>
+   * <p>
    * <pre>
    * newScan().findAnnotations();
    * </pre>
@@ -95,7 +95,7 @@ public class ClassScan {
 
   /**
    * This method has the same effect as:
-   * <p/>
+   * <p>
    * <pre>
    * newScan().findAll();
    * </pre>

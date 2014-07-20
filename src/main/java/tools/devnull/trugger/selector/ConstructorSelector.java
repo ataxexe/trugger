@@ -59,7 +59,7 @@ public interface ConstructorSelector extends AnnotatedElementSelector, Predicate
 
   /**
    * Selects the single constructor matching the previously specified selectors.
-   * <p/>
+   * <p>
    * This method may throw a {@link ReflectionException} if the specified selectors
    * doesn't take to a single constructor in the given target.
    *

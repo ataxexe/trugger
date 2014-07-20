@@ -29,7 +29,7 @@ public interface ClassSpecifier extends PredicateSelector<Class>, AnnotatedEleme
 
   /**
    * Selects only instantiable classes. Classes that applies must:
-   * <p/>
+   * <p>
    * <ul> <li>not be abstract</li> <li>be public</li> <li>have at least one public
    * constructor</li> </ul>
    *

@@ -52,7 +52,7 @@ import java.util.Set;
 
 /**
  * An utility class for help the use of Reflection.
- * <p/>
+ * <p>
  * This class also uses a {@link ReflectionFactory} for some operations.
  *
  * @author Marcelo Guimarães
@@ -326,10 +326,10 @@ public final class Reflection {
 
   /**
    * Handles a collection of fields.
-   * <p/>
+   * <p>
    * Is extremely important that <strong>all</strong> fields have the same type, but the
    * access way (static or non-static) does not matter.
-   * <p/>
+   * <p>
    * For getting the values, the return type will be a {@link Collection} of {@link Object
    * objects} containing the values based on the iteration order.
    *
@@ -486,7 +486,7 @@ public final class Reflection {
   /**
    * Invokes a collection of methods that have the same parameters. The access way (static
    * or non-static) does not matter.
-   * <p/>
+   * <p>
    * The return type will be a {@link Collection} of {@link Object objects} containing the
    * values based on the iteration order.
    *

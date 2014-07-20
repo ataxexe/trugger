@@ -23,15 +23,15 @@ import java.lang.reflect.Method;
 
 /**
  * Interface that defines a class capable of invoking a {@link Method}.
- * <p/>
+ * <p>
  * For invoking a static method, you don't need to specify that instance:
- * <p/>
+ * <p>
  * <pre>
  * MyType result = {@link Reflection#invoke(Method)}.withoutArgs();
  * </pre>
- * <p/>
+ * <p>
  * For a non-static method, you must specify an instance:
- * <p/>
+ * <p>
  * <pre>
  * MyType result = {@link Reflection#invoke(Method)}.on(instance).withArgs(arg1, arg2);
  * </pre>

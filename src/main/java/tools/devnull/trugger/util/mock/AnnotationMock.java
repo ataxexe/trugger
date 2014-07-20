@@ -33,12 +33,12 @@ import static tools.devnull.trugger.reflection.ReflectionPredicates.named;
 
 /**
  * A builder for creating mock {@link Annotation annotations}.
- * <p/>
+ * <p>
  * This mock provides some useful features because annotations may have default values.
  * This class can resolve them and automatically configure the values in the mock object.
- * <p/>
+ * <p>
  * Here is an example of use:
- * <p/>
+ * <p>
  * <pre>
  * import static org.atatec.trugger.util.mock.Mock.annotation;
  * import static org.atatec.trugger.util.mock.Mock.mock;
@@ -55,9 +55,9 @@ import static tools.devnull.trugger.reflection.ReflectionPredicates.named;
  * Class&lt;? extends Annotation&gt; type = resource.annotationType(); //return
  * javax.annotation.Resource class
  * </pre>
- * <p/>
+ * <p>
  * There are another ways to mock annotations:
- * <p/>
+ * <p>
  * <pre>
  * // if you don't need to specify any property
  * Resource resource2 = mock(annotation(Resource.class));

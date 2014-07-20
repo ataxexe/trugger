@@ -29,7 +29,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Helper class for resolving generic types against type variables.
- * <p/>
+ * <p>
  * This class is originally from the SpringFramework.
  *
  * @author Juergen Hoeller
@@ -188,12 +188,12 @@ final class TruggerGenericTypeResolver {
    * Read the {@link TypeVariable TypeVariables} from the supplied {@link
    * ParameterizedType} and add mappings corresponding to the {@link TypeVariable#getName
    * TypeVariable name} -> concrete type to the supplied {@link Map}.
-   * <p/>
+   * <p>
    * Consider this case:
-   * <p/>
+   * <p>
    * <pre class="code> public interface Foo&lt;S, T&gt; { .. } public class FooImpl
    * implements Foo&lt;String, Integer&gt; { .. } </pre>
-   * <p/>
+   * <p>
    * For '<code>FooImpl' the following mappings would be added to the {@link Map}:
    * {S=java.lang.String, T=java.lang.Integer}.
    */

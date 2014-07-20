@@ -57,7 +57,7 @@ public interface MethodSelector extends MethodSpecifier, PredicableResult<Method
 
   /**
    * Selects the single method matching the previously specified selectors.
-   * <p/>
+   * <p>
    * This method may throw a {@link ReflectionException} if the specified selectors
    * doesn't take to a single method in the given target.
    *

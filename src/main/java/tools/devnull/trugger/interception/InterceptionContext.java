@@ -150,7 +150,7 @@ public class InterceptionContext {
   }
 
   /**
-   * @return <null></null> if the method return type is an Object or a default primitive
+   * @return <code>null</code> if the method return type is an Object or a default primitive
    * value if it is primitive (false to boolean, 0 to long...).
    */
   public Object nullReturn() {
